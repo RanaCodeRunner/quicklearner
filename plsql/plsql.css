@@ -64,7 +64,7 @@ body {
     padding:10px;
 }
 .hero {
-    height: calc(1000vh - 80px);
+    height: calc(300vh - 80px);
     background-image: url(output/4.jpg);
     background-position: center;
     background-size: cover;
