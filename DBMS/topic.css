@@ -66,7 +66,7 @@ body {
     padding:10px;
 }
 .hero {
-    height: calc(1000vh - 80px);
+    height: calc(115vh - 80px);
     background-image: url(pic/4.jpg);
     background-position: center;
     background-size: cover;
@@ -103,59 +103,79 @@ body {
   }
 }
 .topic{width:100%;float: left;}
-.sql{width:100%;float:left;position: relative;}
-.sql h1 {
-    float: left;
-    margin-top: 260px;
-    margin-left: 43px;
-    color: orangered;
-    font-size: 31px;
+.sql{width:33%;float:left;position: relative;}
+.ff {
+    width: 344px;
+    height: 262px;
+    margin-left: 200px;
+    border-radius: 10%;
+    margin-top: 150px;
+    box-shadow: 0 0 100px darkgoldenrod; 
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden; 
 }
-.sql h1 a{
-    color: orangered;
+.txt
+{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin-top: 88px;
+  margin-left: 70px;
 }
-.sql h1 a:hover{
-    color: var(--color--primary);
-
+.sql:hover .ff{
+    opacity: 0.3;
+}
+.sql:hover .txt{
+    opacity: 0.3;
 }
 .md{
-    width: 344px;
-    height: 262px;
-    margin-left: 600px;
-    border-radius: 10%;
-    margin-top: 150px;
-    box-shadow: 0 0 100px darkgoldenrod; 
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-      
-}
-.plsql{width:100%;float:left;position: relative;}
-.plsql h1 {
-    float: left;
-    margin-top: 260px;
-    margin-left: 43px;
-    color: orangered;
-    font-size: 31px;
-}
-.plsql h1 a{
-    color: orangered;
-}
-.plsql h1 a:hover{
-    color: var(--color--primary);
+    background-color: #f0f40e;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 
 }
-.gg {
+.plsql{width:33%;float:left;position: relative;}
+.aa {
     width: 344px;
     height: 262px;
-    margin-left: 600px;
+    margin-left: 300px;
     border-radius: 10%;
     margin-top: 150px;
     box-shadow: 0 0 100px darkgoldenrod; 
     opacity: 1;
     display: block;
     transition: .5s ease;
-    backface-visibility: hidden;
-      
+    backface-visibility: hidden; 
+}
+.text
+{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin-top: 88px;
+  margin-left: 70px;
+}
+.plsql:hover .aa{
+    opacity: 0.3;
+}
+.plsql:hover .text{
+    opacity: 0.3;
+}
+.gg{
+    background-color: #f0f40e;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+
 }

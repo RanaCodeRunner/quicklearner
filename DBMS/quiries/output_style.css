@@ -95,6 +95,7 @@ a:hover{
     margin-left: 45px;
     margin-top: 16px;
     font-size: 27px;
+    letter-spacing: 1px;
 }
 .content h3 {
     color: white;
@@ -102,6 +103,8 @@ a:hover{
     width: 100%;
     margin-left: 45px;
     margin-top: 27px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 .syntax {
     color: dodgerblue;

@@ -51,45 +51,27 @@
 
 <h1 style="color:yellow;font-size: 25px;">1. IMPLICIT COMMIT</h1>
 <h3>The actions that will force a commit to occur, even without issuing the COMMIT command or without setting AUTOCOMMIT features ON are:</h3>
-<h3>(i) Exiting SQL *Plus<br>
+</h3><h3>(i) Exiting SQL *Plus<br>
     (ii) Creating a database object like: table, view, index etc.<br>    
     (iii) Granting or Revoking resources<br>    
     (iv) Altering objects<br>    
     (v) Connecting or disconnecting from Database server<br>    
     Using any of these commands implicitly performs the COMMIT operation.</h3>
-
-    <h1 style="color:yellow;font-size: 25px;">2. AUTO ROLLBACK</h1>
+    </div>
+    <div class="syntax">
+        <h1>Syntax:-</h1>
+        </div>
+        <div class="box">
+            <p><b>COMMIT;</b></p>
+        </div>
+    <div class="content">
+            <h1 style="color:yellow;font-size: 25px;">2. AUTO ROLLBACK</h1>
     <h3>After completion of any DML statement, if the user experiences serious difficulty such as hardware failure and no explicit commit is made, SQL will automatically ROLLBACK all un-committed work. If the machine or database goes down, it does this as cleanup work the next time the database is brought up.</h3> 
 </div>
 
 <div class="syntax">
-<h1>Example:-</h1>
-</div>
-<div class="box">
-    <p><b>STEP 1 :- SELECT * from EMPLOYEES;</b></p>
-</div>
-<div class="image">
-    <img src="../../sql/output/54.PNG"/>
-</div>                  
-
-    <div class="box">
-        <p><b>STEP 2 :- INSERT INTO EMPLOYEES VALUES(11,114,16000);</b></p>
-    </div>
-    <div class="image">
-        <img src="../../sql/output/54.1.PNG"/>
-    </div>      
-    <div class="box">
-        <p><b>STEP 3 :- SELECT * FROM EMPLOYEES;</b></p>
-    </div>
-    <div class="image">
-        <img src="../../sql/output/54.2.PNG"/>
-    </div>      
-    <div class="box">
-        <p><b>STEP 4 :- ROLLBACK;</b></p>
+    <h1>Syntax:-</h1>
     </div>
     <div class="box">
-        <p><b>STEP 5 :- SELECT * FROM EMPLOYEES;</b></p>
+        <p><b>ROLLBACK;</b></p>
     </div>
-    <div class="image">
-        <img src="../../sql/output/54.3.PNG"/>
-    </div>                  

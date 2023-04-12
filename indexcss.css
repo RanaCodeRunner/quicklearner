@@ -65,7 +65,7 @@ body {
     padding:10px;
 }
 .hero {
-    height: calc(100vh - 95px);
+    height: calc(102vh - 95px);
     background-image: url(pic/2.jpg);
     background-position: center;
     background-size: cover;
@@ -99,19 +99,4 @@ body {
         width: 50px;
         height: 80px;
     }
-}
-
-.bos {
-    background-color: #4d4d4d;
-    border-radius: 5px;
-    padding: 0.5rem 2rem 2rem;
-    height: 100px;
-    width: 50%;
-    margin-left: 312px;
-    margin-top: -38px;
-}
-.bos h2 {
-    margin-left: 32px;
-    margin-top: 13px;
-    color: orangered;
 }
