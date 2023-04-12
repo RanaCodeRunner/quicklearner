@@ -136,9 +136,85 @@
           <p><b>
              CLOSE < cursor_name > >;</b></p>
       </div>
+      <div class="content">
+        <H3 style="color:yellow">EXPLICIT CURSUR ATTRIBUTES:-</H3>
+        <H3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oracle provides some attributes known as Explicit Cursor Attributes to control the data processing while using cursors. We use these attributes to avoid errors while accessing cursors through OPEN, FETCH and CLOSE statements.
+<br><br>
+            These are the attributes available to check the status of an explicit cursor.        
+            <BR>(i) %FOUND            
+           <BR> (ii) %NOTFOUND            
+            <BR>(iii) %ROWCOUNT            
+            <BR>(iv) %ISOPEN            
+    </div>
+</div>
+<div class="image">
+    <img src="../output/22.5.PNG"/>
+</div>
+
+      </div>
       <div class="pic_text">
         <h1>Examples:-</h1>
     </div>
+    <div class="box">
+        <p><b>declare<br>
+            cursor x is select roll, name from student ;<br>            
+            r student.roll%type;<br>            
+            s student.name%type;<br>
+            begin<br>            
+            open x;<br>
+            loop<br>            
+            fetch x into r,s;<br>   
+            exit when x%notfound;<br>
+            dbms_output.put_line(r || s);<br>
+            end loop;<br>
+            end;</b></p>
+    </div>
     <div class="image">
         <img src="../output/22.4.PNG"/>
+    </div>
+    <div class="content">
+        <H1>CURSORS FOR LOOP:-</H1>
+        <H3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Cursor FOR LOOP implicitly declares its loop index as a record of type %ROWTYPE, opens a cursor, repeatedly fetches rows of the values from the active set into 
+            fields in the record, and then closes the cursor when all rows have been processed or when the EXIT command is encountered.
+    </div>
+</div>
+      </div>
+      <div class="pic_text">
+        <h1>Syntax:-</h1>
+    </div>
+    <div class="box">
+        <p><b>FOR < INDEX > IN < CURSOR_NAME >  LOOP<BR>
+         < STATEMENTS >;</p>
+    </div>
+    <div class="content">
+        <H1>CURSORS WITH PARAMETERS:-</H1>
+        <H3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parameters allow values to be passed to a cursor when it is opened, and used within the query when it executes. Using parameters explicit cursor may be opened more than once in a block, returning a different active set each time.
+<BR>     Each formal parameter in the cursor declaration must have a corresponding actual parameter in the OPEN statement. Parameter data types are the same as those for scalar variables, but you do not give them sizes. The parameters are treated like PL/SQL variables within the cursor's query expression.</H3>
+    </div>
+</div>
+      </div>
+      <div class="pic_text">
+        <h1>Syntax:-</h1>
+    </div>
+    <div class="box">
+        <p><b>CURSOR CURSOR_NAME > <BR>
+            [(PARAMETERS_NAME DATATYPE,....)]<BR>
+                IS<BR>
+                    select_statements;</p>
+    </div>
+    <div class="pic_text">
+        <h1>Example</h1>:-</h1>
+    </div>
+    <div class="box">
+        <p><b>declare<br>
+            curson x(y number) is select from student where roll_no>=y;<br>
+             begin<br>            
+            for num in x(2)<br>            
+            loop<br>            
+            dbms_output.put_line(num. roll no);<br>            
+            end loop;<br>
+        end;</p>
+        </div>
+    <div class="image">
+        <img src="../output/22.6.PNG"/>
     </div>
