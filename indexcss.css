@@ -1,4 +1,4 @@
-:root{
+ :root{
     --color--primary:#0073ff;
     --color--white:#e9e9e9;
     --color--black:#141d28;
@@ -11,7 +11,10 @@
 }
 body {
     font-family: sans-serif;
+    background-color: #d1e5eb;
+    /* overflow: hidden; */
 }
+  /*<-------------header---------------->*/
 .menu {
     background-color: var(--color--black);
     height: 80px;
@@ -46,6 +49,8 @@ body {
     color: var(--color--primary);
 
 }
+  /*<-------------dropdown list ---------------->*/
+
 .dropdown{
     display: none;
 }
@@ -71,14 +76,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     }
-.welcome {
+.welcome  h1{
     width: 40%;
     top: 30%;
     position: absolute;
     left: 10%;
     border-bottom: 5px solid white;
     overflow: hidden;
-    animation: animate 2s linear forwards;
+    animation: a 2s linear forwards;
 }
 
 .welcome h1 {
@@ -86,7 +91,7 @@ body {
     font-size: 60px;
 }
 
-@keyframes animate {
+@keyframes a{
     0% {
         width: 0px;
         height: 0px;
@@ -100,3 +105,112 @@ body {
         height: 80px;
     }
 }
+.welcome h3 {
+    /* display: flex; */
+    position: absolute;
+    width: 25rem;
+    overflow: hidden;
+    height: 41px;
+    text-align: center;
+    padding: 0.6rem 1.2rem;;
+    border-radius: 13px;
+    margin: 300px 278px;
+    background:dodgerblue;
+}
+.welcome h3 a{
+    color: var(--color--white);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.welcome h3 a:hover{
+    color: black;
+}
+.hero .welcome h3:hover{
+    box-shadow: 0 0 2rem rgba(0, 0, 240, 0.5);
+}
+/* <---------------------courses---------------------------------------> */
+
+
+/* <---------PhP style-----> */
+.tit
+{
+    height: 5vh;
+    font-size: 20px;
+    padding-top: 7px;
+    text-align: center;
+    color: rgb(249, 251, 249);
+    background-color: #3780b4;
+}
+.main
+{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    /* height: calc(100vh - 80px); */
+
+}
+.sidebar
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    color: #e9e9e9;
+    background-color:var(--color--black);
+    text-align: left;
+    padding-top:1rem ;
+    padding-left: 2rem;
+    /* scroll-behavior: smooth; */
+    /* overflow-y: scroll; */
+}
+.sidebar h3
+{
+    font-size: 23px;
+    color: #0073ff;
+    padding-bottom: 1.5rem;
+}
+.sidebar ul{
+    color:rgb(252, 250, 250);
+    font-size: 20px;
+    margin-top:20px;
+}
+.sidebar ul li{
+    padding: 4px 10px;
+}
+.sidebar ul li a{
+    color: var(--color--white);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.sidebar ul li a:hover{
+    color: var(--color--primary);
+
+}
+.contentbar
+{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color:antiquewhite;
+    height: 500vh;
+    padding:5rem ;
+}/* .sidebar b
+{
+    color: red;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.sidebar a {
+    padding: 20px 10px;
+    border-bottom: 2px solid blueviolet;
+}
+#test
+{
+    color: blue;
+} */
